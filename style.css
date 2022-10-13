@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url('./font/norse-bold-webfont.woff2') format('woff2'),
+        url('./font/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.container>.cover {
+    width: 35vw;
+    height: 100vh;
+    background-image: url("./image/halie-west-25xggax4bSA-unsplash.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-top: 11.5em;
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 35vw;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-image {
+    width: 7em;
+    margin: 0.1em;
+}
+
+.logo-title {
+    color: white;
+    font-family: norsebold;
+    font-size: 7rem;
+}
+
+
+.photo-credit,
+.photo-credit a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.photo-credit {
+    text-align: center;
+    width: 35vw;
+    margin-top: 31.5em;
+}
+
+.sign-up-form {
+    background-color: #F7F7F7;
+}
+
+.introduction {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin: 4.25em 8em 1.75em 6rem;
+    padding-right: 4em;
+}
+
+fieldset {
+    background-color: white;
+    padding: 2rem 6rem;
+    border: none;
+    box-shadow: 0 0.25em 0.25em 0.25em rgba(0, 0, 0, 0.2);
+}
+
+fieldset>h2 {
+    font-size: 1.75rem;
+    font-stretch: condensed;
+    margin-bottom: 0.75rem;
+}
+
+.form-area {
+    display: flex;
+    gap: 7em;
+}
+
+fieldset label {
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.125em;
+    margin: 1.5em 0 0.5em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+input {
+    width: 20em;
+    height: 2.25em;
+    border: 1px solid black;
+    border-radius: 0.4em;
+}
+
+input[type="password"]:invalid {
+    border: 0.1em solid red;
+}
+
+input[type="password"]:invalid + span::after {
+    color: red;
+    content: "* Passwords do not match";
+    letter-spacing: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+input:focus {
+    border: 0.25em solid #66b2ff;
+    box-shadow: 0.1em 0.1em 0.3em black;
+}
+
+.submit-button {
+    margin: 2.5em 6rem;
+}
+
+button[type="submit"] {
+    color: white;
+    background-color: #596D48;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 0.5em 2.125em;
+    border: none;
+    border-radius: 0.35em;
+    box-shadow: 0.1em 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5em;
+}
+
+button[type="submit"]:hover {
+    background-color: #70875C;
+}
+
+button[type="submit"]:active {
+    box-shadow: none;
+}
+
+.login-reminder {
+    font-weight: 500;
+}
+
+.login-reminder a {
+    text-decoration: none;
+    color: #596D48;
+}
