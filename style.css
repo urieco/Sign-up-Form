@@ -159,3 +159,69 @@ button[type="submit"]:active {
     text-decoration: none;
     color: #596D48;
 }
+
+@media (max-width: 1500px) {
+    .introduction {
+        margin: 2.125em 2em 0.875em 3rem;
+        padding-right: 2em;
+    }
+
+    fieldset {
+        padding: 1em 3em;
+    }
+
+    fieldset>h2 {
+        margin-bottom: 0.375rem;
+    }
+
+    .form-area {
+        gap: 3.5em;
+    }
+
+    input {
+        width: 18em;
+    }
+
+    .submit-button {
+        margin: 2.5em 3rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container>.cover {
+        width: 97.5vw;
+        height: 35vh;
+    }
+
+    .introduction {
+        font-size: 1.5rem;
+        padding-right: 1em;
+        margin: 1em 1em 0.875em 3rem;
+    }
+
+    .logo {
+        width: 97.5vw;
+        position: absolute;
+        top: 5%;
+    }
+
+    .photo-credit {
+        margin: 7em 0 0 15em;
+    }
+
+   .form-area {
+        gap: 2em;
+   }
+
+   input {
+    width: 12em;
+   }
+
+   button[type="submit"] {
+    font-size: 1rem;
+   }
+}
